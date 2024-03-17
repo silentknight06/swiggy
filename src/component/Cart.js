@@ -19,7 +19,7 @@ const Cart=()=>{
    const amount=()=>{
           
         const sum=cartItems.reduce(function (sum1, curr){
-                console.log(curr);
+               //  console.log(curr);
                 return sum1;
         }, 0)
         console.log(0);

@@ -3,7 +3,7 @@ const faqData = [
       id: "first",
       title: "What is Zaika?",
       description:
-        "Zaika is a food delivery web application developed from scratch using React and Redux Toolkit. It allows users to conveniently order food from various restaurants and explore diverse cuisines.",
+        "Zomato is a food delivery web application developed from scratch using React and Redux Toolkit. It allows users to conveniently order food from various restaurants and explore diverse cuisines.",
     },
     {
       id: "second",
