@@ -22,7 +22,7 @@ const Cart=()=>{
                //  console.log(curr);
                 return sum1;
         }, 0)
-        console.log(0);
+     //    console.log(0);
         return sum;
    }
     return(

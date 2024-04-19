@@ -17,7 +17,7 @@ const Body=()=>{
             
             const data=await fetch("https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
             const json= await data.json();
-               console.log(json);
+              //  console.log(json);
                setrestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
                setfilteredRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
             }
@@ -34,7 +34,7 @@ const Body=()=>{
                           />
                       <button className="px-4 py-1 mx-2 rounded-md bg-black  text-white  hover:bg-yellow-600 hover:text-black" 
                       onClick={()=>{
-                             console.log(listrestaurants);
+                            //  console.log(listrestaurants);
                         const filteredRestaurant=listrestaurants.filter(
                           (res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase())
                         )

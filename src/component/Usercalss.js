@@ -10,7 +10,7 @@ class Userclass extends React.Component{
               avatar_url:""
              }
           }
-        console.log("child constructors");
+        // console.log("child constructors");
        }
      async  componentDidMount(){
         // console.log("child did mount is call");
@@ -19,10 +19,10 @@ class Userclass extends React.Component{
           this.setState({
             userinfo:json,
           })
-          console.log("child comp.d.m call");
+          // console.log("child comp.d.m call");
     }
       componentDidUpdate(){
-        console.log("child com.d.u call");
+        // console.log("child com.d.u call");
       }
      render(){
            

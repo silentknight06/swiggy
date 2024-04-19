@@ -9,7 +9,7 @@ const Header=()=>{
       const online=useOnlineStatus();
 
       useEffect(()=>{
-         console.log("useeffect called");
+         // console.log("useeffect called");
       }, [btnNameReact])
 
      const cartItem=useSelector((store)=>store.cart.items);
@@ -25,7 +25,7 @@ const Header=()=>{
              <ul className="flex p-4 m-4">
                <li className="px-4">Online status:{online? "✅" :"🔴"}</li>
                 <li className="px-4 ">
-                <Link className="  text-xl hover:text-blue-600" to="/">Home</Link> </li>
+                  <Link className="  text-xl hover:text-blue-600" to="/">Home</Link> </li>
                 <li className="px-4">
                   <Link  className="   text-xl hover:text-blue-600" to="/about">About</Link>
                 </li>

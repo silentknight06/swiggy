@@ -13,11 +13,13 @@ import { useState } from "react";
           return <Shimmer />;
        }
         console.log(resInfo);
-    const {name, cuisines, costForTwo}=resInfo?.data?.cards[0]?.card?.card?.info;
-     const {itemCards}=resInfo?.data?.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card;
+   //  const {name, cuisines, costForTwo}=resInfo?.data?.cards[0]?.card?.card?.info;
+   const {name, cuisines, costForTwo}=resInfo?.data?.cards[2]?.card?.card?.info;
+   //   const {itemCards}=resInfo?.data?.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card;
+     const {itemCards}=resInfo?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card;
      
         const categories=
-        resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(c=>
+        resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(c=>
              c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
         )
 
